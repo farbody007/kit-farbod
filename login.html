@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    color: rgb(255, 254, 254);
+    padding: 15px;
+    line-height: 60px;
+    font-size: 18px;
+    margin-left: 23px;
+
+}
+body{
+    background-color: rgb(52, 52, 110);
+    min-height: 100vh;
+    display: flex;
+    font-family: sans-serif;
+}
+.contaner{
+    margin: auto;
+    width: 500px;
+    max-width: 90%;
+}
+.contaner form{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgb(19, 19, 90) ;
+}
+.contaner form h1{
+    text-align: center;
+    margin-bottom: 24px;
+    color: rgb(0, 0, 0);
+}
+.contaner form .formcontorol{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    margin: 10px 0 18px 0;
+    padding: 0 10px;
+}
+.contaner form .btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: bisque;
+    border-radius: 12px;
+    transition: .5s;
+}
+.contaner form .btn:hover{
+    opacity: .7;
+}
+@media  (max-width:768px){
+    .contaner{
+ margin:  auto;
+    width: 100%;
+    max-width: 90%;
+    margin-right: 60px; 
+}
+.contaner form{
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+    background: rgb(243, 243, 243);
+    border-radius: 4px;
+    box-shadow: 0 8px 16px rgb(19, 19, 90) ;
+}
+.contaner form h1{
+    text-align: center;
+    margin-bottom: 24px;
+    color: rgb(0, 0, 0);
+}
+.contaner form .formcontorol{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+}
+.contaner form .btn{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: bisque;
+    border-radius: 12px;
+    transition: .5s;
+}
+.contaner form .btn:hover{
+    opacity: .7;
+}
+}
+</style>
+<body>
+    <li><a href="index.html">Home</a></li>
+    <div class="contaner">
+        <form action="">
+            <h1>Login</h1>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="formcontorol" required>
+            </div>
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" class="formcontorol" required>
+            </div>
+            <input type="submit" class="btn" value="Login">
+        </form>
+        
+    </div>
+    
+</body>
+</html>
